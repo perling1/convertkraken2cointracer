@@ -6,10 +6,10 @@ The script was tested on Win10 Powershell 5.1.
 
 # Instructions
 1. Open your powershell ISE
-2. Open this powershell script
+2. Open convertkraken2cointracer.ps1
 3. Edit lines, that specify the infile and outfile
 4. Run the script
-5. Use the created outputfile as import in cointracer
+5. Use the new outputfile as import in cointracer
 
 # How to export your trades from kraken
 1. Log into your kraken account
@@ -28,3 +28,5 @@ Reference;DateTime;Info;SourcePlatform;SourceCurrency;SourceAmount;TargetPlatfor
 
 # Link to free cointracer software
 https://www.cointracer.de/
+
+More crypto pairs from kraken, like dash,link,eos,bch can be easily integrated
