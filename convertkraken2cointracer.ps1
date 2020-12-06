@@ -80,13 +80,46 @@ $nl = [Environment]::NewLine
 $outtext="Reference;DateTime;Info;SourcePlatform;SourceCurrency;SourceAmount;TargetPlatform;TargetCurrency;TargetAmount;FeeCurrency;FeeAmount"+$nl
 $basis | ForEach-Object {
 
-#only btc & ETH & LTC  
+#Valid Coin Paris 
+$coin="NONE"
 if ( $_.pair -match "XXBTZEUR") { $coin="BTC" }
 if ( $_.pair -match "XETHZEUR") { $coin="ETH" }
 if ( $_.pair -match "XLTCZEUR") { $coin="LTC" }
 
-#only btc & ETH & LTC  
-if ( $_.pair -match "XXBTZEUR" -Or $_.pair -match "XETHZEUR" -Or $_.pair -match "XLTCZEUR") {
+if ( $_.pair -match "BCHEUR")   { $coin="BCH" }
+if ( $_.pair -match "UNIEUR")   { $coin="UNI" }
+if ( $_.pair -match "DASHEUR")  { $coin="DASH"}
+if ( $_.pair -match "LINKEUR")  { $coin="LINK"}
+
+if ( $_.pair -match "XXRPZEUR") { $coin="XRP" }
+if ( $_.pair -match "XXLMZEUR") { $coin="XLM" }
+if ( $_.pair -match "WAVESEUR") { $coin="WAVES"}
+if ( $_.pair -match "DAIEUR")   { $coin="DAI" }
+
+if ( $_.pair -match "TRXEUR")   { $coin="TRX" }
+if ( $_.pair -match "OMGEUR")   { $coin="OMG" }
+if ( $_.pair -match "NANOEUR")  { $coin="NANO"}
+if ( $_.pair -match "ANTEUR")   { $coin="ANT" }
+
+if ( $_.pair -match "EOSEUR")   { $coin="EOS" }
+if ( $_.pair -match "YFIEUR")   { $coin="YFI" }
+if ( $_.pair -match "XXMRZEUR") { $coin="XMR" }
+if ( $_.pair -match "XZECZEUR") { $coin="ZEC" }
+
+if ( $_.pair -match "ADAEUR")   { $coin="ADA" }
+if ( $_.pair -match "DOTEUR")   { $coin="DOT" }
+if ( $_.pair -match "XTZEUR")   { $coin="XTZ" }
+
+if ( $_.pair -match "FILEUR")   { $coin="FIL" }
+if ( $_.pair -match "CRVEUR")   { $coin="CRV" }
+if ( $_.pair -match "COMPEUR")  { $coin="COMP"}
+if ( $_.pair -match "BALEUR")   { $coin="BAL" }
+
+if ( $_.pair -match "USDTEUR")  { $coin="USDT"}
+if ( $_.pair -match "USDCEUR")  { $coin="USDC"}
+
+#Other unknown Pairs, or Pairs against other currencies
+if ( $coin -ne "NONE") {
 
 #NON Margin Trades
  if ( $_.margin -eq "0" ) {
