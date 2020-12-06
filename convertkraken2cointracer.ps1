@@ -1,8 +1,8 @@
 #########################################################
 ## convertkraken2cointracer.ps1
 ## Converts Kraken Exports into Cointracer Import Format
-## Only BTC-EUR  ETH-EUR   LTC-EUR   Trades  
-## Only NON Margin Trades
+## Many coin pairs are converted, follow readme on github
+## Only NON Margin Trades are converted
 ##
 ## Usage:   1. Edit your input and output files in Line 15-20  
 ##          2. Run the script in windows powershell 
