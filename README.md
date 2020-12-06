@@ -11,17 +11,20 @@ The script was tested on Win10 Powershell 5.1.
 4. Run the script
 5. Use the created outputfile as import in cointracer
 
-# How to get your input File from kraken
+# How to export your trades from kraken
 1. Log into your kraken account
 2. Go to Trading History
 3. Export  your historic trades with all columns
 4. Download the file with historic trades to your computer
+5. Use the file as infile for this powershell script
 
 # Example kraken export 
 "txid","ordertxid","pair","time","type","ordertype","price","cost","fee","vol","margin","misc","ledgers"
 "45RRZM-MJNVR-6EP8","D7RETL-10IXJ-ZZYRYF","XXBTZEUR","2017-04-02 07:31:31.8234","buy","limit",7813.40000,625.07200,1.06262,0.02000000,312.53600,"","QPWERT-LOPF4N-KHC4EM,UZUT11-POZSCI-3R52G"
 
-# Example converted file for cointracer
+# Example converted file after script (import for cointracer)
 Reference;DateTime;Info;SourcePlatform;SourceCurrency;SourceAmount;TargetPlatform;TargetCurrency;TargetAmount;FeeCurrency;FeeAmount
 45RRZM-MJNVR-6EP8;02.04.2017 07:31:31;XXBTZEUR buy;kraken;EUR;77.42;kraken;BTC;0.01000000;EUR;0.20129
 
+# Link to free cointracer software
+https://www.cointracer.de/
