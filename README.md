@@ -15,8 +15,7 @@ The script was tested on Win10 Powershell 5.1.
 1. Log into your kraken account
 2. Go to Trading History
 3. Export  your historic trades with all columns
-4. Download the file with historic trades to your computer
-5. Use the file as infile for this powershell script
+4. Download the export file with historic trades to your computer
 
 # Example kraken export 
 "txid","ordertxid","pair","time","type","ordertype","price","cost","fee","vol","margin","misc","ledgers"
