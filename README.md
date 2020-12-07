@@ -10,7 +10,7 @@ The script was tested on Win10 Powershell 5.1.
 2. Open convertkraken2cointracer.ps1
 3. Edit lines, that specify the infile and outfile
 4. Run the script
-5. Use the new outputfile as import in cointracer
+5. Use the outputfile as import in cointracer
 
 # How to export your trades from kraken
 1. Log into your kraken account
@@ -26,43 +26,59 @@ The script was tested on Win10 Powershell 5.1.
 Reference;DateTime;Info;SourcePlatform;SourceCurrency;SourceAmount;TargetPlatform;TargetCurrency;TargetAmount;FeeCurrency;FeeAmount
 45RRZM-MJNVR-6EP8;02.04.2017 07:31:31;XXBTZEUR buy;kraken;EUR;77.42;kraken;BTC;0.01000000;EUR;0.20129
 
-# Supported Coin Pairs
-"XXBTZEUR" $coin="BTC" 
-"XETHZEUR" $coin="ETH" 
-"XLTCZEUR" $coin="LTC" 
-
-"BCHEUR"   $coin="BCH" 
-"UNIEUR"   $coin="UNI" 
-"DASHEUR"  $coin="DASH"
-"LINKEUR"  $coin="LINK"
-
-"XXRPZEUR" $coin="XRP" 
-"XXLMZEUR" $coin="XLM" 
-"WAVESEUR" $coin="WAVES"
-"DAIEUR"   $coin="DAI" 
-
-"TRXEUR"   $coin="TRX" 
-"OMGEUR"   $coin="OMG" 
-"NANOEUR"  $coin="NANO"
-"ANTEUR"   $coin="ANT" 
-
-"EOSEUR"   $coin="EOS" 
-"YFIEUR"   $coin="YFI" 
-"XXMRZEUR" $coin="XMR" 
-"XZECZEUR" $coin="ZEC" 
-
-"ADAEUR"   $coin="ADA" 
-"DOTEUR"   $coin="DOT" 
-"XTZEUR"   $coin="XTZ" 
-
-"FILEUR"   $coin="FIL" 
-"CRVEUR"   $coin="CRV" 
-"COMPEUR"  $coin="COMP"
-"BALEUR"   $coin="BAL" 
-
-"USDTEUR"  $coin="USDT"
-"USDCEUR"  $coin="USDC"
-
+# Supported Coins and pairs
+EUR
+USD
+BTC
+BCH
+ETH
+BNB
+LTC
+XRP
+ETC
+XMR
+XLM
+ZEC
+EOS
+ADA
+YFI
+UNI
+MKR
+DOT
+DAI
+TRX
+VET
+XEM
+XTZ
+ZEC
+ZRX
+----
+XXBT
+XETH
+XLTC
+XXMR
+XLMZ
+XXRP
+ZEUR
+ZUSD
+XZEC
+ATOM
+IOTA
+USDT
+USDC
+WAVE
+LINK
+LOOM
+AAVE
+AION
+ALGO
+SCRT
+RUNE
+COMP
+DASH
+----
+SUSHI
+STRAX
 
 # Link to cointracer software
 https://www.cointracer.de/
