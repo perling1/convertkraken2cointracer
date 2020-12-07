@@ -1,13 +1,13 @@
-# convertkraken2cointracer
-The script converts export files from kraken exchange into the cointracer format. Cointracer is a free software used to create tax reports for cryptocurrency trading. The convertion includes major coin pairs, see chapter supported pairs (bitcoin, ethereum, litecoin, link, uni, dash, xrp, dai, usdt, dot and more).
+# convertkraken2cointracer and convertbinance2cointracer
+The scripts converts export files from kraken/binance exchange into the cointracer format. Cointracer is a free software used to create tax reports for cryptocurrency trading. The conversion includes major coin pairs, see chapter supported pairs (bitcoin, ethereum, litecoin, link, uni, dash, xrp, dai, usdt, dot and more).
 Yet it does not convert margin positions.
 
 # Version
-The script was tested on Win10 Powershell 5.1.
+The scripts were tested on Win10 Powershell 5.1.
 
 # Instructions
 1. Open your powershell ISE
-2. Open convertkraken2cointracer.ps1
+2. Open convertkraken2cointracer.ps1 or  convertbinance2cointracer.ps1
 3. Edit lines, that specify the infile and outfile
 4. Run the script
 5. Use the outputfile as import in cointracer
