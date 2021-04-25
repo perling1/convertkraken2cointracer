@@ -96,6 +96,9 @@ $tc=$_.pair.substring(0, 5)
 $pairmid_char_cnt=[int](5)
 if ( $tc -match "SUSHI" )  { $coin="SUSHI" }
 if ( $tc -match "STRAX"  ) { $coin="STRAX" }
+if ( $tc -match "WAVES"  ) { $coin="WAVES" }
+if ( $tc -match "STORJ"  ) { $coin="STORJ" }
+if ( $tc -match "MATIC"  ) { $coin="MATIC" }
 
 if ($coin -eq "NONE") {
 $tc=$_.pair.substring(0, 4)
@@ -114,6 +117,12 @@ if ( $tc -match "SCRT"  ) { $coin="SCRT" }
 if ( $tc -match "RUNE"  ) { $coin="RUNE" }
 if ( $tc -match "COMP"  ) { $coin="COMP" }
 if ( $tc -match "DASH"  ) { $coin="DASH" }
+if ( $tc -match "VTHO"  ) { $coin="VTHO" }
+if ( $tc -match "PAXG"  ) { $coin="PAXG" }
+if ( $tc -match "HBAR"  ) { $coin="HBAR" }
+if ( $tc -match "BAND"  ) { $coin="BAND" }
+if ( $tc -match "NANO"  ) { $coin="NANO" }
+if ( $tc -match "MANA"  ) { $coin="MANA" }
 }                                  
 
 if ($coin -eq "NONE") {
@@ -151,6 +160,11 @@ if ( $tc -match "CRV"  ) { $coin=$tc }
 if ( $tc -match "FIL"  ) { $coin=$tc }
 if ( $tc -match "BAL"  ) { $coin=$tc }
 if ( $tc -match "UNI"  ) { $coin=$tc }
+if ( $tc -match "BAT"  ) { $coin=$tc }
+if ( $tc -match "ONT"  ) { $coin=$tc }
+if ( $tc -match "OXT"  ) { $coin=$tc }
+if ( $tc -match "VET"  ) { $coin=$tc }
+if ( $tc -match "KNC"  ) { $coin=$tc }
 }
 
 #parse 2nd coin name
@@ -159,6 +173,9 @@ $len=[int]($_.pair.length)
 $tc=$_.pair.substring($pairmid_char_cnt, ($_.pair.length-$pairmid_char_cnt))
 if ( $tc -match "SUSHI" )  { $targetcoin="SUSHI" }
 if ( $tc -match "STRAX"  ) { $targetcoin="STRAX" }
+if ( $tc -match "WAVES"  ) { $targetcoin="WAVES" }
+if ( $tc -match "STORJ"  ) { $targetcoin="STORJ" }
+if ( $tc -match "MATIC"  ) { $targetcoin="MATIC" }
 
 if ($targetcoin -eq "NONE") {
 $tc=$_.pair.substring($pairmid_char_cnt, ($_.pair.length-$pairmid_char_cnt))
@@ -176,6 +193,12 @@ if ( $tc -match "SCRT"  ) { $targetcoin="SCRT" }
 if ( $tc -match "RUNE"  ) { $targetcoin="RUNE" }
 if ( $tc -match "COMP"  ) { $targetcoin="COMP" }
 if ( $tc -match "DASH"  ) { $targetcoin="DASH" }
+if ( $tc -match "VTHO"  ) { $targetcoin="VTHO" }
+if ( $tc -match "PAXG"  ) { $targetcoin="PAXG" }
+if ( $tc -match "HBAR"  ) { $targetcoin="HBAR" }
+if ( $tc -match "BAND"  ) { $targetcoin="BAND" }
+if ( $tc -match "NANO"  ) { $targetcoin="NANO" }
+if ( $tc -match "MANA"  ) { $targetcoin="MANA" }
 }                                  
 
 if ($targetcoin -eq "NONE") {
@@ -212,6 +235,11 @@ if ( $tc -match "CRV"  ) { $targetcoin=$tc }
 if ( $tc -match "FIL"  ) { $targetcoin=$tc }
 if ( $tc -match "BAL"  ) { $targetcoin=$tc }
 if ( $tc -match "UNI"  ) { $targetcoin=$tc }
+if ( $tc -match "BAT"  ) { $targetcoin=$tc }
+if ( $tc -match "ONT"  ) { $targetcoin=$tc }
+if ( $tc -match "OXT"  ) { $targetcoin=$tc }
+if ( $tc -match "VET"  ) { $targetcoin=$tc }
+if ( $tc -match "KNC"  ) { $targetcoin=$tc }
 }
 
 #if ($_.type -eq "sell") { Write-Host $_.td + " " + $_.pair + " " + $_.type + " " + $_.vol + " " +$coin       + " " + $_.cost + $targetcoin + $_.fee + " " + $_.feecoin  }
