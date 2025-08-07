@@ -1,0 +1,45 @@
+{
+  "test_info": {
+    "prompt": "wie kann ich QS fälle automatisiert aufsetzten. die software hat folgende funktion\nwähle einen autoren aus und die software zeigt die bücher des autors und die meisteverkauften exemplare und tags welche art von buch es ist und empfehlungen darunter. wie teste ich verschiedene fälle.",
+    "timestamp": "2025-08-07T10:36:16.954318",
+    "llm_count": 3
+  },
+  "results": [
+    {
+      "llm_name": "ChatGPT",
+      "response_time": 9.5367431640625e-07,
+      "evaluation": {
+        "completeness": 10,
+        "practicality": 8,
+        "structure_clarity": 10,
+        "technical_depth": 4,
+        "weighted_score": 7.9
+      },
+      "response_preview": "Für die automatisierte QS Ihrer Buchempfehlungs-Software empfehle ich folgendes Vorgehen:\n\n1. **Funktionale Tests:**\n   - Autor-Suche: Testen Sie eindeutige Namen (Stephen King), mehrdeutige (Michael ..."
+    },
+    {
+      "llm_name": "Gemini",
+      "response_time": 1.1920928955078125e-06,
+      "evaluation": {
+        "completeness": 10,
+        "practicality": 8,
+        "structure_clarity": 10,
+        "technical_depth": 4,
+        "weighted_score": 7.9
+      },
+      "response_preview": "QS-Automatisierung für Buchempfehlungs-Software:\n\n**1. Testfälle definieren:**\n- Autor-Suche (bekannte/unbekannte Autoren)\n- Buchauflistung nach Verkaufszahlen\n- Genre-Tagging Korrektheit\n- Empfehlung..."
+    },
+    {
+      "llm_name": "Claude",
+      "response_time": 2.384185791015625e-06,
+      "evaluation": {
+        "completeness": 10,
+        "practicality": 4,
+        "structure_clarity": 10,
+        "technical_depth": 8,
+        "weighted_score": 7.7
+      },
+      "response_preview": "Hier ist eine strukturierte Herangehensweise für automatisierte QS-Tests Ihrer Buchempfehlungs-Software:\n\n**Test-Kategorien:**\n\nA) **Autor-Funktionalität**\n   - Eindeutige Autoren: Stephen King, J.K. ..."
+    }
+  ]
+}
