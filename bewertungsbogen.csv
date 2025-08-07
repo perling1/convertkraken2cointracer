@@ -1,0 +1,22 @@
+LLM_Name,Test_Durchlauf,Vollständigkeit_1-10,Praktikabilität_1-10,Struktur_Klarheit_1-10,Technische_Tiefe_1-10,Gewichteter_Score,Notizen,Stärken,Schwächen
+ChatGPT,1,,,,,,,"Konkrete Tools erwähnt, gute Struktur","Weniger technische Details"
+ChatGPT,2,,,,,,,"","",""
+ChatGPT,3,,,,,,,"","",""
+Claude,1,,,,,,,"Sehr strukturiert, umfassend","Möglicherweise zu theoretisch"
+Claude,2,,,,,,,"","",""
+Claude,3,,,,,,,"","",""
+Gemini,1,,,,,,,"Kompakt, praxisnah","Weniger detailliert"
+Gemini,2,,,,,,,"","",""
+Gemini,3,,,,,,,"","",""
+
+# Bewertungskriterien:
+# Vollständigkeit (25%): Alle Aspekte der Software abgedeckt, konkrete Testfälle, Automatisierungsansätze
+# Praktikabilität (30%): Umsetzbare Vorschläge, realistische Szenarien, Tool-Empfehlungen
+# Struktur/Klarheit (20%): Logischer Aufbau, verständliche Sprache, gute Kategorisierung
+# Technische Tiefe (25%): Testing-Methoden, Automatisierungsstrategien, Best Practices
+
+# Bewertungsskala:
+# 9-10: Exzellent - Umfassend, praktisch, gut strukturiert
+# 7-8: Gut - Solide Antwort mit kleineren Lücken
+# 5-6: Durchschnittlich - Grundlegende Abdeckung
+# 1-4: Schwach - Unvollständig oder unpraktisch
